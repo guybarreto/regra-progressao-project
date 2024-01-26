@@ -44,4 +44,21 @@ public class Period {
     }
     return sumOfWeights == 100;
   }
+
+  /**
+   * Calculate percentage float.
+   *
+   * @return the float
+   */
+  public float calculatePercentage() {
+    float totalWeight = 0;
+    float totalGradeWeight = 0;
+
+    for (Activity activity : activities) {
+      totalGradeWeight += (activity.grade * activity.weight);
+      totalWeight += activity.weight;
+    }
+
+    return (totalGradeWeight / totalWeight);
+  }
 }

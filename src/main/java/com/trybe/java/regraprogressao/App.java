@@ -34,8 +34,14 @@ public class App {
       System.out.println("A soma dos pesos é diferente de 100!");
       scanner.close();
     } else {
-      System.out.println("Atividades cadastradas com sucesso!");
-      scanner.close();
+      float percentage = period.calculatePercentage();
+      System.out.println("Você alcançou " + percentage + "%!");
+
+      if (percentage >= 85.0) {
+        System.out.println("Parabéns! Você obteve aprovação!");
+      } else {
+        System.out.println("Lamentamos informar que você não atingiu a pontuação mínima necessária para sua aprovação.");
+      }
     }
   }
 }
