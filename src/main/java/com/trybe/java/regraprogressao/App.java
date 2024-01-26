@@ -35,14 +35,17 @@ public class App {
       scanner.close();
     } else {
       float percentage = period.calculatePercentage();
-      System.out.println("Você alcançou " + percentage + "%!");
 
       if (percentage >= 85.0) {
-        System.out.println("Parabéns! Você obteve aprovação!");
+        System.out.println(
+            "Parabéns! Você alcançou " + percentage + "%! "
+            + "E temos o prazer de informar que você obteve aprovação!"
+        );
       } else {
         System.out.println(
-            "Lamentamos informar que você não atingiu a pontuação "
-                + "mínima necessária para sua aprovação."
+            "Lamentamos informar que, com base na sua pontuação alcançada neste período, "
+                + percentage
+                + "%, você não atingiu a pontuação mínima necessária para sua aprovação."
         );
       }
     }
