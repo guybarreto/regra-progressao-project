@@ -31,7 +31,7 @@ public class App {
     }
 
     if (!period.checkSumOfWeights()) {
-      System.out.println("A soma dos pesos não é igual a 100!");
+      System.out.println("A soma dos pesos é diferente de 100!");
       scanner.close();
     } else {
       System.out.println("Atividades cadastradas com sucesso!");
