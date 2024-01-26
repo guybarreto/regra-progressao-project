@@ -25,9 +25,11 @@ public class Period {
    *
    * @param name   the name
    * @param weight the weight
+   * @param grade  the grade
    */
-  public void registerActivity(String name, float weight) {
-    this.activities.add(new Activity(name, weight));
+  public void registerActivity(String name, float weight, float grade) {
+    Activity activity = new Activity(name, weight, grade);
+    activities.add(activity);
   }
 
   /**

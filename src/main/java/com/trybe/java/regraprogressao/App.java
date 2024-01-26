@@ -24,7 +24,10 @@ public class App {
       System.out.println("Digite o peso da atividade " + i + ":");
       float weight = Float.parseFloat(scanner.nextLine());
 
-      period.registerActivity(name, weight);
+      System.out.println("Digite a nota obtida para " + name + ":");
+      float grade = Float.parseFloat(scanner.nextLine());
+
+      period.registerActivity(name, weight, grade);
     }
 
     if (!period.checkSumOfWeights()) {
