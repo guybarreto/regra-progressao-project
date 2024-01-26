@@ -40,7 +40,10 @@ public class App {
       if (percentage >= 85.0) {
         System.out.println("Parabéns! Você obteve aprovação!");
       } else {
-        System.out.println("Lamentamos informar que você não atingiu a pontuação mínima necessária para sua aprovação.");
+        System.out.println(
+            "Lamentamos informar que você não atingiu a pontuação "
+                + "mínima necessária para sua aprovação."
+        );
       }
     }
   }
